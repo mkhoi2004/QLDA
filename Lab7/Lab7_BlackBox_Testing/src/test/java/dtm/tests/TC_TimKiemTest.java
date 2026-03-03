@@ -1,0 +1,5 @@
+package dtm.tests;
+
+public class TC_TimKiemTest {
+    // placeholder for search test
+}

@@ -1,0 +1,4 @@
+<!-- Placeholder testng_smoke.xml -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+</suite>
