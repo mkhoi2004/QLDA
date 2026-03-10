@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CheckoutFailTestSuite">
+
+    <test name="ShippingCalculatorBoundaryTest">
+        <classes>
+            <class name="com.dtm.lab8.LoginEmptyFieldTest"/>
+        </classes>
+    </test>
+
+</suite>
