@@ -3,7 +3,7 @@
 
     <test name="ShippingCalculatorBoundaryTest">
         <classes>
-            <class name="com.dtm.lab8.LoginEmptyFieldTest"/>
+            <class name="com.dtm.lab8.LogoutTest"/>
         </classes>
     </test>
 

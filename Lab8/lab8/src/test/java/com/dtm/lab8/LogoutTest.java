@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class LoginEmptyFieldTest {
+public class LogoutTest {
 
         WebDriver driver;
 
@@ -20,6 +20,10 @@ public class LoginEmptyFieldTest {
 
                 driver.manage().window().maximize();
                 driver.get("https://www.saucedemo.com");
+
+                driver.findElement(By.id("user-name")).sendKeys("standard_user");
+                driver.findElement(By.id("password")).sendKeys("secret_sauce");
+                driver.findElement(By.id("login-button")).click();
         }
 
         @AfterMethod
@@ -31,12 +35,13 @@ public class LoginEmptyFieldTest {
         }
 
         @Test
-        public void testEmptyLogin() {
+        public void testLogout() {
 
-                driver.findElement(By.id("login-button")).click();
+                driver.findElement(By.id("react-burger-menu-btn")).click();
+                driver.findElement(By.id("logout_sidebar_link")).click();
 
-                String error = driver.findElement(By.cssSelector("h3[data-test='error']")).getText();
+                String url = driver.getCurrentUrl();
 
-                Assert.assertTrue(error.contains("Username is required"));
+                Assert.assertEquals(url, "https://www.saucedemo.com/");
         }
 }
