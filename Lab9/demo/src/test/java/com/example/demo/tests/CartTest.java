@@ -1,6 +1,7 @@
 package com.example.demo.tests;
 
 import framework.base.BaseTest;
+import framework.config.ConfigReader;
 import framework.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;

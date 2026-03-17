@@ -1,13 +1,20 @@
 package com.example.demo.tests;
 
-import framework.base.BaseTest;
-import framework.pages.*;
-import framework.utils.*;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import java.io.IOException;
-import java.util.Map;
+
+import framework.base.BaseTest;
+import framework.config.ConfigReader;
+import framework.pages.InventoryPage;
+import framework.pages.LoginPage;
+import framework.pages.UserData;
+import framework.utils.JsonReader;
+import framework.utils.TestDataFactory;
 
 public class UserLoginTest extends BaseTest {
     @DataProvider(name = "jsonUsers")
