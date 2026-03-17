@@ -8,10 +8,18 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15</td><td></td><td></td></tr>
+<tr><th colspan="8">Lab9Suite</th></tr>
+<tr><td><a href="#t0">LoginTests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">30.824</td><td>regression</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FlakyTests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>regression</td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">30.824</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Lab9Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.LoginDDTTest</td><td><a href="#m0">testLoginNegative</a></td><td rowspan="5">1773737724505</td><td rowspan="5">1874</td></tr><tr class="passedeven"><td><a href="#m1">testLoginNegative</a></td></tr><tr class="passedeven"><td><a href="#m2">testLoginNegative</a></td></tr><tr class="passedeven"><td><a href="#m3">testLoginNegative</a></td></tr><tr class="passedeven"><td><a href="#m4">testLoginNegative</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Surefire test</h2></body>
+<h2>LoginTests</h2><h3 id="m0">tests.LoginDDTTest#testLoginNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>standard_user</td><td>wrongpass</td><td>do not match</td><td>Sai mật khẩu</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.LoginDDTTest#testLoginNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td><td>locked out</td><td>User bị khoá</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LoginDDTTest#testLoginNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td></td><td>secret_sauce</td><td>Username is required</td><td>Username rỗng</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginDDTTest#testLoginNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>standard_user</td><td></td><td>Password is required</td><td>Password rỗng</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginDDTTest#testLoginNegative</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>wrong_user</td><td>wrong_pass</td><td>do not match</td><td>Sai cả hai</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FlakyTests</h2></body>
 </html>
