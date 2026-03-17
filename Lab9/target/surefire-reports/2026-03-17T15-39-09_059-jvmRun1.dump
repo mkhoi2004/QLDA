@@ -1,0 +1,36 @@
+# Created at 2026-03-17T15:39:10.726
+org.testng.TestNGException: 
+Cannot instantiate class framework.utils.RetryListener
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:41)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:59)
+	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:10)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:60)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:28)
+	at org.testng.TestNG.addListeners(TestNG.java:1034)
+	at org.testng.TestNG.initializeConfiguration(TestNG.java:991)
+	at org.testng.TestNG.initializeEverything(TestNG.java:1082)
+	at org.testng.TestNG.run(TestNG.java:1093)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:38)
+	... 15 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.testng cannot be resolved
+	The import org.testng cannot be resolved
+	IAnnotationTransformer cannot be resolved to a type
+	ITestAnnotation cannot be resolved to a type
+
+	at framework.utils.RetryListener.<init>(RetryListener.java:3)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 18 more
+
+
