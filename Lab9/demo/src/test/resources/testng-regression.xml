@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite" parallel="methods" thread-count="3" verbose="2">
+    
+    <!-- Đăng ký RetryListener để tự động retry flaky test -->
+    <listeners>
+        <listener class-name="com.example.demo.framework.utils.RetryListener"/>
+    </listeners>
+
+    <test name="Regression Tests">
+        <!-- Chạy tất cả các test case (bao gồm smoke + regression + flaky + faker) -->
+        <groups>
+            <run>
+                <include name="regression"/>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- Tất cả test class trong Lab 9 -->
+            <class name="com.example.demo.tests.LoginTest"/>
+            <class name="com.example.demo.tests.LoginDDTTest"/>
+            <class name="com.example.demo.tests.UserLoginTest"/>
+            <class name="com.example.demo.tests.CartTest"/>
+            <class name="com.example.demo.tests.FlakySimulationTest"/>
+        </classes>
+    </test>
+</suite>
