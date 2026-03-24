@@ -1,0 +1,8 @@
+tests\PerformanceTest.class
+tests\SimpleApiTest.class
+tests\UserApiTest.class
+tests\CrudTest.class
+tests\ApiTest.class
+tests\SimpleUITest.class
+base\BaseUITest.class
+tests\AuthTest.class
